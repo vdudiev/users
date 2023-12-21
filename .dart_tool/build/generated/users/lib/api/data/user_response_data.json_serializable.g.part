@@ -1,0 +1,15 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$UserResponseDataImpl _$$UserResponseDataImplFromJson(
+        Map<String, dynamic> json) =>
+    _$UserResponseDataImpl(
+      data: UserEntity.fromJson(json['data'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$UserResponseDataImplToJson(
+        _$UserResponseDataImpl instance) =>
+    <String, dynamic>{
+      'data': instance.data,
+    };
